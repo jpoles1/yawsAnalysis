@@ -8,13 +8,11 @@
             }
             #container{
                 width: 36in;
-                height: 36in;
-                background-color: black;
-                color: white;
+                height: 48in;
             }
             /*Font Sizing*/
             h1{
-                font-size: 100pt;
+                font-size: 90pt;
                 margin: 0px;
             }
             h2{
@@ -22,7 +20,15 @@
                 margin: 0px;
             }
             h3{
-                font-size: 80pt;
+                font-size: 70pt;
+                margin: 0px;
+            }
+            h4{
+                font-size: 64pt;
+                margin: 0px;
+            }
+            h5{
+                font-size: 48pt;
                 margin: 0px;
             }
             /*Setup Header Styles*/
@@ -42,17 +48,38 @@
                 justify-content: space-around;
                 align-content: space-around;
             }
-            #abstract{
-                width: 45%;
-                background-color: white;
+            .contbox{
+                font-size: 36pt;
                 clear: none;
                 float:left;
+                padding: .5in;
+                line-height: 1.25;
+                border: solid 5px black;
+            }
+            #abstract{
+                width: 29%;
+            }
+            #taxonomy{
+                width: 29%;
             }
             #pathology{
-                width: 45%;
-                background-color: white;
+                width: 29%;
+            }
+            #taxalist{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-content: space-around;
+                flex-wrap: wrap;
+                text-align: center;
+                font-size: 35pt;
+            }
+            #taxalist li{
                 clear: none;
                 float: left;
+                padding: 20px;
+                margin: 20px;
+                background-color: green;
             }
         </style>
     </head>
@@ -64,8 +91,24 @@
                 <h3>By: Jordan Poles</h3>
             </div>
             <div id="intro">
-                <div id="abstract"><h2 style="text-align: center;">Abstract</h2></div>
-                <div id="pathology"><h2 style="text-align: center;">Pathogology</h2></div>
+                <div id="abstract" class="contbox">
+                    <h4 style="text-align: center;">Abstract</h4>
+                    Yaws is a human disease found predominantly in tropical regions among children. The causative agent of Yaws, <i>Treponema pallidum pertenue</i>, is a spirochete bacteria closely related to syphilis - in fact, it is classified as the same species. Notably, unlike syphilis (a STD) Yaws is transmitted by skin-to-skin contact. The symptoms of Yaws are also not as severe as those of syphilis and include: the appearance of papillomatous lesions, arthralgia, malaise, and bone degradation. Of particular note, Yaws is easily treatable using a single dosage of antibiotic. As such, Yaws is actually rather close to being eliminated, putting it on the short list which includes only smallpox. The WHO estimates that the pathogen will no longer trouble mankind after 2020.
+                </div>
+                <div id="taxonomy" class="contbox">
+                    <h4 style="text-align: center;">Taxonomy</h4>
+                    <ul id="taxalist">
+                        <li>Domain: Bacteria</li>
+                        <li>Phylum: Spirochaetes</li>
+                        <li>Class: Spirochaetia</li>
+                        <li>Order: Spirochaetales</li>
+                        <li>Family: Spirochaetaceae</li>
+                        <li>Genus: Treponema</li>
+                        <li>Species: Pallidum</li>
+                        <li>Sub-species: Pertenue</li>
+                    </ul>
+                </div>
+                <div id="pathology" class="contbox"><h4 style="text-align: center;">Pathology</h4></div>
             </div>
         </div>
     </body>
