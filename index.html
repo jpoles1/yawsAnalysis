@@ -11,23 +11,48 @@
                 height: 36in;
                 background-color: black;
                 color: white;
-                margin: 25px;
+            }
+            /*Font Sizing*/
+            h1{
+                font-size: 100pt;
+                margin: 0px;
+            }
+            h2{
+                font-size: 80pt;
+                margin: 0px;
+            }
+            h3{
+                font-size: 80pt;
+                margin: 0px;
             }
             /*Setup Header Styles*/
             #header{
-                margin-top: 25px;
+                padding-top: 25px;
                 width: 100%;
                 text-align: center;
+                padding-bottom: 25px;
+                border: solid 2px white;
+                margin-bottom: 25px;
             }
-            #header h1{
-                margin: 0px;
-                font-size: 110pt;
-
+            #intro{
+                width: 100%;
+                color: black;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-content: space-around;
             }
-            #header h2{
-                margin: 0px;
-                font-size: 100pt;
-
+            #abstract{
+                width: 45%;
+                background-color: white;
+                clear: none;
+                float:left;
+            }
+            #pathology{
+                width: 45%;
+                background-color: white;
+                clear: none;
+                float: left;
             }
         </style>
     </head>
@@ -35,7 +60,12 @@
         <div id="container">
             <div id="header">
                 <h1>The Impending Elimination of Yaws</h1>
-                <h2><i>Treponema pallidum pertenue</i></h2>
+                <h3><i>Treponema pallidum pertenue</i></h3>
+                <h3>By: Jordan Poles</h3>
+            </div>
+            <div id="intro">
+                <div id="abstract"><h2 style="text-align: center;">Abstract</h2></div>
+                <div id="pathology"><h2 style="text-align: center;">Pathogology</h2></div>
             </div>
         </div>
     </body>
