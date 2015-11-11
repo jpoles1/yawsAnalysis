@@ -5,14 +5,16 @@
         <style>
             body{
                 background-color: white;
+                font-family: arial;
             }
             #container{
                 width: 36in;
                 height: 48in;
+                border: solid 5px black;
             }
             /*Font Sizing*/
             h1{
-                font-size: 90pt;
+                font-size: 85pt;
                 margin: 0px;
             }
             h2{
@@ -20,12 +22,12 @@
                 margin: 0px;
             }
             h3{
-                font-size: 70pt;
+                font-size: 65pt;
                 margin: 0px;
             }
             h4{
-                font-size: 64pt;
-                margin: 0px;
+                font-size: 60pt;
+                margin: 0 0 30px 0;
             }
             h5{
                 font-size: 48pt;
@@ -36,17 +38,10 @@
                 padding-top: 25px;
                 width: 100%;
                 text-align: center;
-                padding-bottom: 25px;
-                border: solid 2px white;
-                margin-bottom: 25px;
             }
             #intro{
                 width: 100%;
                 color: black;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                align-content: space-around;
             }
             .contbox{
                 font-size: 36pt;
@@ -56,30 +51,55 @@
                 line-height: 1.25;
                 border: solid 5px black;
             }
-            #abstract{
+            .thirdcol{
                 width: 29%;
             }
-            #taxonomy{
-                width: 29%;
+            #pathology ul{
+                margin: 5px;
             }
-            #pathology{
-                width: 29%;
+            #pathology li{
+                margin-left: 15px;
+                list-style: none;
+                padding-top: 5px;
+                vertical-align: middle;
+                white-space: normal;
+
             }
-            #taxalist{
+            .dashlist{
+                list-style: none;
+            }
+            .dashlist li:before {
+                content: "- ";
+            }
+            .flexrow{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
                 align-content: space-around;
                 flex-wrap: wrap;
+            }
+            #taxalist{
                 text-align: center;
                 font-size: 35pt;
+                list-style: none;
             }
             #taxalist li{
                 clear: none;
                 float: left;
                 padding: 20px;
                 margin: 20px;
-                background-color: green;
+                border: solid #333 1px;
+                background-color: black;
+                font-weight: bold;
+                color: white;
+                font-size: 32pt;
+            }
+            .break{
+                width: 100%;
+                height: 50px;
+                background-image: url(res/spirodiagram.png);
+                margin-top: 10px;
+                margin-bottom: 10px;
             }
         </style>
     </head>
@@ -90,14 +110,15 @@
                 <h3><i>Treponema pallidum pertenue</i></h3>
                 <h3>By: Jordan Poles</h3>
             </div>
-            <div id="intro">
-                <div id="abstract" class="contbox">
-                    <h4 style="text-align: center;">Abstract</h4>
+            <div class="break"></div>
+            <div id="intro" class="flexrow">
+                <div id="abstract" class="contbox thirdcol">
+                    <h4 style="text-align: center;">Abstract:</h4>
                     Yaws is a human disease found predominantly in tropical regions among children. The causative agent of Yaws, <i>Treponema pallidum pertenue</i>, is a spirochete bacteria closely related to syphilis - in fact, it is classified as the same species. Notably, unlike syphilis (a STD) Yaws is transmitted by skin-to-skin contact. The symptoms of Yaws are also not as severe as those of syphilis and include: the appearance of papillomatous lesions, arthralgia, malaise, and bone degradation. Of particular note, Yaws is easily treatable using a single dosage of antibiotic. As such, Yaws is actually rather close to being eliminated, putting it on the short list which includes only smallpox. The WHO estimates that the pathogen will no longer trouble mankind after 2020.
                 </div>
-                <div id="taxonomy" class="contbox">
-                    <h4 style="text-align: center;">Taxonomy</h4>
-                    <ul id="taxalist">
+                <div id="taxonomy" class="contbox thirdcol">
+                    <h4 style="text-align: center;">Taxonomy:</h4>
+                    <ul id="taxalist" class="flexrow">
                         <li>Domain: Bacteria</li>
                         <li>Phylum: Spirochaetes</li>
                         <li>Class: Spirochaetia</li>
@@ -108,8 +129,54 @@
                         <li>Sub-species: Pertenue</li>
                     </ul>
                 </div>
-                <div id="pathology" class="contbox"><h4 style="text-align: center;">Pathology</h4></div>
+                <div id="pathology" class="contbox thirdcol">
+                    <h4 style="text-align: center;">Pathology:</h4>
+                    <b>Three Major Stages of Infection<sup>Mitja 2013</sup>:</b>
+                    <br>
+                    First Stage:
+                    <ul class="dashlist">
+                        <li>Mother Yaw or Lesion appears at site of exposure, grows with time</li>
+                        <li>Commonly found on the legs and ankles</li>
+                        <li>Incubation period ranges from 10-90 days</li>
+                    </ul>
+                    Second Stage:
+                    <ul class="dashlist">
+                        <li>After 3 weeks to 2 years, secondary lesions appear</li>
+                        <li>Joint pain and malaise are common</li>
+                        <li>Palms and soles may fissure making walking difficult</li>
+                    </ul>
+                    Third Stage:
+                    <ul class="dashlist">
+                        <li>Develops after >5 years of untreated infection</li>
+                        <li>Destruction of skin and bone</li>
+                    </ul>
+                </div>
             </div>
-        </div>
+            <div class="break"></div>
+            <div id="secondrow" class="flexrow">
+                <div class="contbox thirdcol">
+                    <h4 style="text-align: center;">Pattern of Infection:</h4>
+                    <ul class="dashlist">
+                        <li>The pathogen is spread by skin-to-skin contact; only among humans<sup>Mitja</sup></li>
+                        <li>The most common of the three endemic treponematoses (Yaws, Bejel and Pinta)</li>
+                        <li>Typically found in warm and humaid climates among poor children</li>
+                        <ul class="dashlist"><li>75% of infected are under age 15<sup>WHO</sup></li></ul>
+                        <li>In 2013, a total of 58,915 Yaws infections were reported by the WHO</li>
+                    </ul>
+                </div>
+                <div id="yawsmap" class="contbox thirdcol">
+                    <h4 style="text-align: center;">Distribution (2012):</h4>
+                    <img src="res/yawsMap.png" style="width: 1000px; margin-left: 5px;"/>
+                </div>
+                <div id="research" class="contbox thirdcol">
+                    <h4 style="text-align: center;">Studying Yaws:</h4>
+                    <ul class="dashlist">
+                        <li>Yaws cannot be grown in culture; it only survives in mammalian tissues</li>
+                        <li>The pathogen is easily killed by changes in environment (drying/heating)</li>
+                        <li>Replicates very slowly (30-33 hrs per division)</li>
+                        <li>Researchers typically grow the pathogen in rabbits and golden hamsters<sup>Mitja</sup></li>
+                    </ul>
+                </div>
+            </div>
     </body>
 </html>
