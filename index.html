@@ -6,11 +6,12 @@
             body{
                 background-color: white;
                 font-family: arial;
+                margin: 0;
             }
             #container{
                 width: 36in;
                 height: 48in;
-                border: solid 5px black;
+                border: solid 8px black;
             }
             /*Font Sizing*/
             h1{
@@ -26,12 +27,19 @@
                 margin: 0px;
             }
             h4{
-                font-size: 60pt;
+                font-size: 53pt;
                 margin: 0 0 30px 0;
             }
             h5{
                 font-size: 48pt;
                 margin: 0px;
+            }
+            .figcaption{
+                font-size: 20pt;
+                margin-top: 10px;
+            }
+            #refs li{
+                font-size: 20pt;
             }
             /*Setup Header Styles*/
             #header{
@@ -44,12 +52,13 @@
                 color: black;
             }
             .contbox{
-                font-size: 36pt;
+                font-size: 32pt;
                 clear: none;
                 float:left;
                 padding: .5in;
                 line-height: 1.25;
                 border: solid 5px black;
+                border-radius: 15px;
             }
             .thirdcol{
                 width: 29%;
@@ -87,12 +96,13 @@
                 clear: none;
                 float: left;
                 padding: 20px;
-                margin: 20px;
+                margin: 5px 0 5px 0;
                 border: solid #333 1px;
-                background-color: black;
+                background-color: #002469;
                 font-weight: bold;
-                color: white;
-                font-size: 32pt;
+                color: #a4a6a8;
+                font-size: 35pt;
+                border-radius: 15px;
             }
             .break{
                 width: 100%;
@@ -124,14 +134,14 @@
                         <li>Class: Spirochaetia</li>
                         <li>Order: Spirochaetales</li>
                         <li>Family: Spirochaetaceae</li>
-                        <li>Genus: Treponema</li>
-                        <li>Species: Pallidum</li>
-                        <li>Sub-species: Pertenue</li>
+                        <li>Genus: <i>Treponema</i></li>
+                        <li>Species: <i>pallidum</i></li>
+                        <li>Sub-species: <i>pertenue</i></li>
                     </ul>
                 </div>
                 <div id="pathology" class="contbox thirdcol">
                     <h4 style="text-align: center;">Pathology:</h4>
-                    <b>Three Major Stages of Infection<sup>Mitja 2013</sup>:</b>
+                    <b>Three Major Stages of Infection<sup>1</sup>:</b>
                     <br>
                     First Stage:
                     <ul class="dashlist">
@@ -157,26 +167,79 @@
                 <div class="contbox thirdcol">
                     <h4 style="text-align: center;">Pattern of Infection:</h4>
                     <ul class="dashlist">
-                        <li>The pathogen is spread by skin-to-skin contact; only among humans<sup>Mitja</sup></li>
+                        <li>The pathogen is spread by skin-to-skin contact; only among humans<sup>1</sup></li>
                         <li>The most common of the three endemic treponematoses (Yaws, Bejel and Pinta)</li>
-                        <li>Typically found in warm and humaid climates among poor children</li>
-                        <ul class="dashlist"><li>75% of infected are under age 15<sup>WHO</sup></li></ul>
+                        <li>Typically found in warm and humid climates(tropics) among poor children</li>
+                        <ul class="dashlist">
+                            <li>75% of infected are under age 15<sup>WHO</sup></li>
+                        </ul>
+                        <li>Infection varies with changes in humidity<sup>2</sup></li>
                         <li>In 2013, a total of 58,915 Yaws infections were reported by the WHO</li>
+                        <li>From 2008-2012 >300,000 cases were reported to the WHO<sup>2</sup></li>
                     </ul>
                 </div>
                 <div id="yawsmap" class="contbox thirdcol">
                     <h4 style="text-align: center;">Distribution (2012):</h4>
                     <img src="res/yawsMap.png" style="width: 1000px; margin-left: 5px;"/>
+                    <div class="figcaption">
+                        Fig 1: The WHO has provided the following map displaying the global distribution of Yaws in 2012. The disease has been eliminated from much of its historical range and is now confined to the region above and below the equator in both Africa and Asia/Oceania.
+                    </div>
                 </div>
+                <div id="hist" class="contbox thirdcol">
+                    <h4 style="text-align: center;">A History of Yaws:</h4>
+                    <ul class="dashlist">
+                        <li><i>Homo erectus</i> skeletons dating back 1.6 Million Years show evidence of Yaws infection<sup>3,4</sup></li>
+                        <li>Yaws was first identified by medicine </li>
+                        <li>How common is the disease on the host and are there large epidemics?</li>
+                        <li>Earliest reference to disease, and where it was first reported?</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="break"></div>
+            <div id="third" class="flexrow">
                 <div id="research" class="contbox thirdcol">
                     <h4 style="text-align: center;">Studying Yaws:</h4>
                     <ul class="dashlist">
                         <li>Yaws cannot be grown in culture; it only survives in mammalian tissues</li>
                         <li>The pathogen is easily killed by changes in environment (drying/heating)</li>
                         <li>Replicates very slowly (30-33 hrs per division)</li>
-                        <li>Researchers typically grow the pathogen in rabbits and golden hamsters<sup>Mitja</sup></li>
+                        <li>Researchers typically grow the pathogen in rabbits and golden hamsters<sup>1</sup></li>
+                        <li>Genetic analysis suggests that Yaws is the oldest of the treponemal diseases<sup>1,4</sup></li>
                     </ul>
                 </div>
+                <div id="yawsmap" class="contbox thirdcol">
+                    <h4 style="text-align: center;">Trends in Research:</h4>
+                    <img src="res/trendsResearch.png" style="width: 1000px; margin-left: 5px;"/>
+                    <div class="figcaption">
+                        Fig 2: This is not a final figure. However, there is no clear trend in
+                    </div>
+                </div>
             </div>
+            <div class="break"></div>
+            <div id="last" class="flexrow">
+                <div class="contbox thirdcol">
+                    <h4 style="text-align: center;">Elimination:</h4>
+                    <ul class="dashlist">
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="contbox thirdcol">
+                    <h4 style="text-align: center;">Barriers to Elimination:</h4>
+                    <ul class="dashlist">
+                        <li>Reserviours of infection exist among young children;<sup>2</sup></li>
+                        <li>Animal reserviours are present, however cross-species transmission is not evident at this time</li>
+                    </ul>
+                </div>
+                <div id="refs" class="contbox thirdcol">
+                    <h4 style="text-align: center;">References:</h4>
+                    <ol>
+                        <li>Mitjà, O., Asiedu, K., & Mabey, D. (2013). Yaws. The Lancet, 381(9868), 763-773.</li>
+                        <li>Kazadi, Walter M et al. "Epidemiology of yaws: an update." Clinical epidemiology 6 (2014): 119.</li>
+                        <li>Rothschild, Bruce M, Israel Hershkovitz, and Christine Rothschild. "Origin of yaws in the Pleistocene." Nature 378.6555 (1995): 343.</li>
+                        <li>On the Origin of the Treponematoses: A Phylogenetic Approach</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
