@@ -12,6 +12,7 @@
                 width: 36in;
                 height: 48in;
                 border: solid 8px black;
+                overflow: hidden;
             }
             /*Font Sizing*/
             h1{
@@ -35,11 +36,15 @@
                 margin: 0px;
             }
             .figcaption{
-                font-size: 20pt;
-                margin-top: 10px;
+                font-size: 24pt;
+                margin-top: 20px;
             }
             #refs li{
-                font-size: 20pt;
+                font-size: 26pt;
+                padding-top: 12px;
+            }
+            #refs li a{
+                color: black;
             }
             /*Setup Header Styles*/
             #header{
@@ -57,7 +62,6 @@
                 float:left;
                 padding: .5in;
                 line-height: 1.25;
-                border: solid 5px black;
                 border-radius: 15px;
             }
             .thirdcol{
@@ -69,7 +73,7 @@
             #pathology li{
                 margin-left: 15px;
                 list-style: none;
-                padding-top: 5px;
+                padding-top: 2px;
                 vertical-align: middle;
                 white-space: normal;
 
@@ -92,7 +96,6 @@
             }
             #taxalist{
                 text-align: center;
-                font-size: 35pt;
                 list-style: none;
             }
             #taxalist li{
@@ -104,15 +107,15 @@
                 background-color: #002469;
                 font-weight: bold;
                 color: #a4a6a8;
-                font-size: 35pt;
+                font-size: 36pt;
                 border-radius: 15px;
             }
             .break{
                 width: 100%;
                 height: 50px;
                 background-image: url(res/spirodiagram.png);
-                margin-top: 10px;
-                margin-bottom: 10px;
+                margin-top: 0px;
+                margin-bottom: 0px;
             }
         </style>
     </head>
@@ -120,7 +123,6 @@
         <div id="container">
             <div id="header">
                 <h1>The Impending Elimination of Yaws</h1>
-                <h3><i>Treponema pallidum pertenue</i></h3>
                 <h3>By: Jordan Poles</h3>
             </div>
             <div class="break"></div>
@@ -130,7 +132,7 @@
                     Yaws is a human disease found predominantly in tropical regions among children. The causative agent of Yaws, <i>Treponema pallidum pertenue</i>, is a spirochete bacteria closely related to syphilis - in fact, it is classified as the same species. Notably, unlike syphilis (a STD) Yaws is transmitted by skin-to-skin contact. The symptoms of Yaws are also not as severe as those of syphilis and include: the appearance of papillomatous lesions, arthralgia, malaise, and bone degradation. Of particular note, Yaws is easily treatable using a single dosage of antibiotic. As such, Yaws is actually rather close to being eliminated, putting it on the short list which includes only smallpox. The WHO estimates that the pathogen will no longer trouble mankind after 2020.
                 </div>
                 <div id="taxonomy" class="contbox thirdcol">
-                    <h4 style="text-align: center;">Taxonomy:</h4>
+                    <h4 style="text-align: center;">Taxonomy:<sup style="font-size: 26pt;">5</sup></h4>
                     <ul id="taxalist" class="flexrow">
                         <li>Domain: Bacteria</li>
                         <li>Phylum: Spirochaetes</li>
@@ -179,13 +181,14 @@
                         <li>Infection varies with changes in humidity</li>
                         <li>In 2013, a total of 58,915 Yaws infections were reported by the WHO</li>
                         <li>From 2008-2012 >300,000 cases were reported to the WHO.<sup>2</sup></li>
+                        <li>Yaws can be effectively treated with a single dose of penicillin or azithromycin<sup>1</sup></li>
                     </ul>
                 </div>
                 <div id="yawsmap" class="contbox thirdcol">
                     <h4 style="text-align: center;">Distribution (2012):</h4>
                     <img src="res/yawsMap.png" style="width: 1000px; margin-left: 5px;"/>
                     <div class="figcaption">
-                        Fig 1: The WHO has provided the following map displaying the global distribution of Yaws in 2012. The disease has been eliminated from much of its historical range and is now confined to the region above and below the equator in both Africa and Asia/Oceania.
+                        Fig 1: The WHO has provided the following map displaying the global distribution of Yaws in 2012. The disease has been eliminated from much of its historical range and is now confined to tropics in both Africa and Asia/Oceania.
                     </div>
                 </div>
                 <div id="hist" class="contbox thirdcol">
@@ -193,16 +196,28 @@
                     <ul class="dashlist">
                         <li><i>Homo erectus</i> skeletons dating back 1.6 million years show evidence of Yaws infection.<sup>3,4</sup></li>
                         <li>Yaws symptoms were first described in 1648 by Willem Piso, a Dutch physician in South America</li>
+                        <ul class="dashlist"><!--Optional-->
+                            <li>Observations were recorded in his book on the natural history of Brazil</li>
+                        </ul><!--Optional-->
+                        <li>The causative agent of Yaws was elucidated in 1905 by Aldo Castellani, shorly after syphillis.<sup>1</sup></li>
+                        <li>Penecillin emerges after WWII; discovered to be very effective against Yaws</li>
+                        <li>These two discoveries sparked a campaign to eliminate the disease from 1952 to 1964</li>
                         <ul class="dashlist">
-                            <li>Observations were recorded in his book on the natural history of Brazil.</li>
+                            <li>Global yaws prevalence dropped by 95%</li>
+                            <li>However, the eradication effort failed.<sup>6,7</sup></li>
                         </ul>
-                        <li>Documented again in 1679 among African Slaves; mistaken for syphillus.<sup>1</sup></li>
-                        <li>How common is the disease on the host and are there large epidemics?</li>
                     </ul>
                 </div>
             </div>
             <div class="break"></div>
             <div id="third" class="flexrow">
+                <div id="restimeline" class="contbox thirdcol">
+                    <h4 style="text-align: center;">Trends in Research:</h4>
+                    <img src="res/trendsResearch.png" style="width: 1000px; margin-left: 5px;"/>
+                    <div class="figcaption">
+                        Fig 2: Following the description of Yaws in 1905, the scientific community began to engange in research on the pathogen. The largest spike in interest occured around the 1950s in response to the WHO elimination effort.
+                    </div>
+                </div>
                 <div id="research" class="contbox thirdcol">
                     <h4 style="text-align: center;">Studying Yaws:</h4>
                     <ul class="dashlist">
@@ -211,30 +226,60 @@
                         <li>Replicates very slowly (30-33 hrs per division)</li>
                         <li>Researchers typically grow the pathogen in rabbits and golden hamsters.<sup>1</sup></li>
                         <li>Genetic analysis suggests that Yaws is the oldest of the treponemal diseases.<sup>1,4</sup></li>
+                        <li>No known pathogens infect <i>T. pallidum</i></li>
                     </ul>
                 </div>
-                <div id="yawsmap" class="contbox thirdcol">
-                    <h4 style="text-align: center;">Trends in Research:</h4>
-                    <img src="res/trendsResearch.png" style="width: 1000px; margin-left: 5px;"/>
-                    <div class="figcaption">
-                        Fig 2: This is not a final figure. However, there is no clear trend in
+                <div id="funfacts" class="contbox thirdcol flexrow">
+                    <h4 style="text-align: center;">Origins of a Name:</h4>
+                    <div style="width: 500px; margin-left: 5px;">
+                        <img src="res/yaws.jpg" style="width: 480px; border-radius: 10px;"/>
+                        <div class="figcaption">
+                            Fig 3: Lesions typical of Yaws
+                        </div>
+                    </div>
+                    <div style="width: 480px; margin-left: 5px; position: relative;">
+                        The term Yaws originates from either:
+                        <ul class="dashlist" style="margin-top: 0px; margin-bottom: 0px;">
+                            <li>The Carib term for sore (yaya), or</li>
+                            <li>The African term for berry (yaw)</li>
+                        </ul>
+                        Also called framboesia tropica after the French word for Raspberry (framboise).<sup>1</sup>
+                        <div style="position: absolute; bottom: 5px; right: 0px; z-index: 1">
+                            <img src="res/3raspberry.jpg" style="width: 120px; border-radius: 10px;"/>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="break"></div>
             <div id="last" class="flexrow">
                 <div class="contbox thirdcol">
-                    <h4 style="text-align: center;">Elimination:</h4>
+                    <h4 style="text-align: center;">Elimination Efforts:</h4>
                     <ul class="dashlist">
-                        <li></li>
+                        <li>Yaws was the first disease slated for eradication after the establishment of the WHO in 1948</li>
+                        <li>This attempt failed: Yaws reemerged from pockets of disease which escaped detection</li>
+                        <li>Yaws should be one of the easier diseases to eliminate</li>
+                        <li>In 1996, India began a highly successful campaign to eliminate the disease</li>
+                        <ul class="dashlist">
+                            <li>Distributed educational materials; cash rewards</li>
+                            <li>Serological and home-to-home monitoring </li>
+                            <li>No cases reported since 2004</li>
+                        </ul>
+                        <li>This success encouraged the renewal of elimination efforts in 2012</li>
+                        <li>Oral azithromycin treatment may improve success: simple and painless.<sup>7</sup></li>
                     </ul>
                 </div>
                 <div class="contbox thirdcol">
                     <h4 style="text-align: center;">Barriers to Elimination:</h4>
+                    WHO hopes for elimination by 2020, but...
                     <ul class="dashlist">
-                        <li>Reserviours of infection exist among young children;<sup>2</sup></li>
-                        <li>Animal reserviours are present, however cross-species transmission is not evident at this time</li>
+                        <li>Complete elimination of Yaws will be necessary, otherwise it will reemerge as in the first campaign</li>
+                        <li>Serological testing is needed in order to identify subclinical cases</li>
+                        <li>Vaccination against Yaws is not possible; reinfection is possible.<sup>7</sup></li>
+                        <li>Reserviours of infection exist among young children</li>
+                        <li>Animal reserviours are present, however cross-species transmission is not evident at this time<sup>2,7</sup></li>
+                        <li>Need for continued monitoring to detect outbreaks and evolution of antibiotic resistance<sup>1,7</sup></li>
                     </ul>
+                    Nonetheless, elimination is quite feasible!
                 </div>
                 <div id="refs" class="contbox thirdcol">
                     <h4 style="text-align: center;">References:</h4>
@@ -243,6 +288,11 @@
                         <li>Kazadi, Walter M et al. "Epidemiology of yaws: an update." Clinical epidemiology 6 (2014): 119.</li>
                         <li>Rothschild, Bruce M, Israel Hershkovitz, and Christine Rothschild. "Origin of yaws in the Pleistocene." Nature 378.6555 (1995): 343.</li>
                         <li>On the Origin of the Treponematoses: A Phylogenetic Approach</li>
+                        <li><a href="http://www.uniprot.org/taxonomy/168" target="_blank">Uniprot Database: Taxonomy - Treponema pallidum subsp. pertenue</a></li>
+                        <li>Yaws: 110 Years After Castellani's Discovery of Treponema pallidum subspecies pertenue</li>
+                        <li><a href="http://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0001837" target="_blank">Yaws Eradication: Facing Old Problems, Raising New Hopes</a></li>
+                        <li><a href="http://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0001837" target="_blank">Eradicating successfully yaws from India: The strategy & global lessons</a></li>
+
                     </ol>
                 </div>
             </div>
