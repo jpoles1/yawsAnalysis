@@ -3,6 +3,8 @@ Let's learn about a once forgotten pathogen which is now on it's way to being el
 
 Yaws is a spirochete bacterium which is closely related to syphillus; in fact they belong to the same species, but are classified as different sub-species. Despite being taxonomically closely related, Yaws is very different from Syphillus: it is spread by skin-to-skin contact, and is commonly found among children in tropical regions.
 
+Because Yaws infection is fairly easy to treat using standard antibiotics, it is currently slated for worldwide eradication efforts. It is currently estimated that elimination will be acheived by 2020.
+
 ###Learn more about yaws from <a href="http://jpoles1.github.io/yawsAnalysis/" target="_blank">this poster</a>
 
 #####You can read a report assembled from the contents of this poster <a href="http://jpoles1.github.io/yawsAnalysis/YawsPosterWriteup.pdf" target="_blank">here</a>
